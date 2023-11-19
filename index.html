@@ -6,6 +6,11 @@
     <title>Муркава</title>
     <link rel="icon" href="img/svg/Логотип.svg" type="image/x-icon">
     <style>
+        .meny_content {
+            display: none;
+        }
+    </style>
+    <style>
         .header_link.active {
             display: flex;
             position: relative;
@@ -40,13 +45,19 @@
                             <a href="#meny" class="header_link">Меню</a>
                         </li>
                         <li class="header_item">
-                            <a href="!#" class="header_link">Котики</a>
+                            <a href="#cats" class="header_link">Котики</a>
                         </li>
                         <li class="header_item">
-                            <a href="!#" class="header_link">Волонтерство</a>
+                            <a href="#gallery" class="header_link">Галерея</a>
                         </li>
                         <li class="header_item">
-                            <a href="!#" class="header_link">Контакти</a>
+                            <a href="#volonter" class="header_link">Волонтерство</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#rules" class="header_link">Правила</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#contact" class="header_link">Контакти</a>
                         </li>
                     </ul>
                 </nav>
@@ -62,23 +73,31 @@
             <p class="intro_subtitle">
                 насолодись смачними стравами, гарячою кавою та часом з пухнастими друзями
             </p>
+            <div class="circle">
+                <p class="textcircle">
+                <br>м. Дніпро,</br>
+                вул. Лісова 23А
+                <br>ПН-НД</br>
+                10:00-20:00</p>
+                </div>
         </section>
     </div>
         <div class="gradient-background">
+            <div class="fon">
             <div id="prices" class="section">
             <div class="wrapper_price">
               <div class="intro2">
                 <div class="content">
                   <div class="price-content">
-                    <h2 class="price_title">Наші ціни</h2>
+                    <h1 class="price_title">Наші ціни</h1>
                     <p class="intro_subtitle2">
                       Запрошуємо вас у світ котів та комфорту. Ознайомтеся з цінами та послугами, які ми пропонуємо вам.
                     </p>
                   </div>
                   <div class="button-container">
-                    <a href="inde.html" class="titlebutton">
-                      <button type="button" class="button">Бронювання в Telegram  <img src="./img/svg/Vector.svg" class="img2"></button> 
-                    </a>
+                    <a href="https://t.me/murkava_bot" class="titlebutton" target="_blank">
+                        <button type="button" class="button">Бронювання в Telegram <img src="./img/svg/Vector.svg" class="img2"></button> 
+                      </a>
                   </div>
                 </div>
                 <div class="price_cards">
@@ -99,33 +118,426 @@
                 </div>  
             </div> 
             </div>
+            </div>
+            <div id="meny" class="section">
+                <h1 class="meny_title">Наше меню</h1>
+                <ul class="meny_list">
+                    <div class="button-container2">
+                        <button class="button_meny" data-menu-id="zakuski_menu" onclick="showMenu('zakuski_menu')">
+                            <img src="./img/svg/закуска.svg" class="mg1">Закуски
+                        </button>
+                        <button type="button" class="button_meny" data-menu-id="hot_dishes_menu" onclick="showMenu('hot_dishes_menu')">
+                            <img src="./img/svg/страва.svg" class="mg1">Гарячі страви
+                        </button>
+                        <button type="button" class="button_meny" data-menu-id="desserts_menu" onclick="showMenu('desserts_menu')">
+                            <img src="./img/svg/Group.svg" class="mg1">Десерти
+                        </button>
+                        <button type="button" class="button_meny" data-menu-id="drinks_menu" onclick="showMenu('drinks_menu')">
+                            <img src="./img/svg/кава.svg" class="mg1">Напої 
+                        </button>
+                    </div>
+                </ul>
+            <div id="zakuski_menu" class="meny_content">
+            <div class="zakuska_container1">
+                <img src="./img/закуска1.png" class="zakuska1">
+                    <h2 class="menytext">Брускетта
+                        <p class="menyinfo">Хрустка брускетта з помідорами, базиліком та пармезаном.</p>
+                    </h2>
+                    <p class="cina2">50 ₴</p>
+                <img src="./img/закуска2.png" class="zakuska2">
+                    <h2 class="menytext2">Гуакамоле
+                        <p class="menyinfo">Смачний гуакамоле з ароматними авокадо та свіжою сальсою.</p>
+                    </h2>
+                    <p class="cina2">45 ₴</p>
+            </div>
+            <div class="zakuska_container1">
+                <img src="./img/закуска3.png" class="zakuska1">
+                    <h2 class="menytext">Сендвіч з куркою
+                        <p class="menyinfo">Сендвіч з курячим філе, салатом і гірчицею.</p>
+                    </h2>
+                    <p class="cina2">55 ₴</p>
+                <img src="./img/закуска4.png" class="zakuska2">
+                    <h2 class="menytext2">Кальмари у паніровці
+                        <p class="menyinfo">Смажені кільця кальмарів у хрусткій паніровці з лимонним соусом.</p>
+                    </h2>
+                    <p class="cina2">60 ₴</p>
+            </div>
+            <div class="zakuska_container1">
+                <img src="./img/закуска5.png" class="zakuska1">
+                <h2 class="menytext">Сирні кульки
+                    <p class="menyinfo">Сирні кульки, обсмажені в хрусткій панірувальній суміші, із сирним соусом.</p>
+                </h2>
+                <p class="cina2">45 ₴</p>
+                <img src="./img/закуска6.png" class="zakuska2">
+                <h2 class="menytext2">Грильовані овочі
+                    <p class="menyinfo">Соковиті грильовані овочі з бальзамічним оцтом та розмарином.</p>
+                </h2>
+                <p class="cina2">50 ₴</p>
+            </div>
+            </div>
+            <div id="hot_dishes_menu" class="meny_content">
+                <div class="zakuska_container1">
+                <img src="./img/гаряч1.png" class="zakuska1">
+                    <h2 class="menytext">Паста Карбонара
+                        <p class="menyinfo">Класична паста Карбонара з беконом, яйцем та сиром Пармезан.</p>
+                    </h2>
+                    <p class="cina2">70 ₴</p>
+                <img src="./img/гаряч2.png" class="zakuska2">
+                    <h2 class="menytext2">Крем-суп з гарбуза
+                        <p class="menyinfo">Ароматний крем-суп зі смаженою гарбузовою кіркою.</p>
+                    </h2>
+                    <p class="cina2">55 ₴</p>
+            </div>
+            <div class="zakuska_container1">
+                <img src="./img/гаряч3.png" class="zakuska1">
+                    <h2 class="menytext">Грибний різотто
+                        <p class="menyinfo">Різотто з асорті грибів, руколою та трюфельним маслом.</p>
+                    </h2>
+                    <p class="cina2">75 ₴</p>
+                <img src="./img/гаряч4.png" class="zakuska2">
+                    <h2 class="menytext2">Лазанья
+                        <p class="menyinfo">Класична італійська лазанья з м'ясом, бешамельним соусом та сиром.</p>
+                    </h2>
+                    <p class="cina2">80 ₴</p>
+            </div>
+            <div class="zakuska_container1">
+                <img src="./img/гаряч5.png" class="zakuska1">
+                <h2 class="menytext">Каррі з куркою
+                    <p class="menyinfo">Ароматне куряче каррі з овочами та кокосовим молоком.</p>
+                </h2>
+                <p class="cina2">70 ₴</p>
+                <img src="./img/гаряч6.png  " class="zakuska2">
+                <h2 class="menytext2">Суп “Том Ям”
+                    <p class="menyinfo">Тайський суп "Том Ям" із гарячими спеціями, лемонграссом та морепродуктами.</p>
+                </h2>
+                <p class="cina2">75 ₴</p>
+            </div>
+            </div>
+            <div id="desserts_menu" class="meny_content">
+                <div class="zakuska_container1">
+                    <img src="./img/десерт1.png" class="zakuska1">
+                        <h2 class="menytext">Яблучний пиріг
+                            <p class="menyinfo">Поглибіться у теплу атмосферу осені з нашим яблучним пирогом.</p>
+                        </h2>
+                        <p class="cina2">70 ₴</p>
+                    <img src="./img/десерт2.png" class="zakuska2">
+                        <h2 class="menytext2">Сінабон
+                            <p class="menyinfo">Ніжне тісто, просочене корицею та облите вершковою глазур'ю.</p>
+                        </h2>
+                        <p class="cina2">55 ₴</p>
+                </div>
+                <div class="zakuska_container1">
+                    <img src="./img/десерт3.png" class="zakuska1">
+                        <h2 class="menytext">Пудинг з карамеллю
+                            <p class="menyinfo">Класичний пудинг із ароматною карамеллю та вершками.</p>
+                        </h2>
+                        <p class="cina2">75 ₴</p>
+                    <img src="./img/десерт4.png" class="zakuska2">
+                        <h2 class="menytext2">Чізкейк з лимоном
+                            <p class="menyinfo">Чізкейк із ніжним лимонним курдом та вершковим кремом.</p>
+                        </h2>
+                        <p class="cina2">80 ₴</p>
+                </div>
+                <div class="zakuska_container1">
+                    <img src="./img/десерт5.png" class="zakuska1">
+                    <h2 class="menytext">Тірамісу
+                        <p class="menyinfo">Класичний італійський десерт з кавою та маскарпоне.</p>
+                    </h2>
+                    <p class="cina2">70 ₴</p>
+                    <img src="./img/десерт6.png  " class="zakuska2">
+                    <h2 class="menytext2">Фруктовий сорбет
+                        <p class="menyinfo">Свіжий фруктовий сорбет, що дарує вам приємне відчуття прохолоди.</p>
+                    </h2>
+                    <p class="cina2">75 ₴</p>
+                </div>
+            </div>
+            <div id="drinks_menu" class="meny_content"> 
+                <div class="zakuska_container1">
+                    <img src="./img/кокт1.png" class="zakuska1">
+                        <h2 class="menytext">Латте
+                            <p class="menyinfo">Ніжна кава із теплим молоком, прикрашена молочною пінкою.</p>
+                        </h2>
+                        <p class="cina2">35 ₴</p>
+                    <img src="./img/кокт2.png" class="zakuska2">
+                        <h2 class="menytext2">Смузі
+                            <p class="menyinfo">Ідеальний вибір для тих, хто прагне поєднати смачне з корисним.</p>
+                        </h2>
+                        <p class="cina2">55 ₴</p>
+                </div>
+                <div class="zakuska_container1">
+                    <img src="./img/кокт3.png" class="zakuska1">
+                        <h2 class="menytext">Чай з медом
+                            <p class="menyinfo">Ароматний чай із натуральним медом та свіжим лимоном</p>
+                        </h2>
+                        <p class="cina2">30 ₴</p>
+                    <img src="./img/кокт4.png" class="zakuska2">
+                        <h2 class="menytext2">Молочний коктейль
+                            <p class="menyinfo">Коктейль із молока та міксу свіжих фруктів.</p>
+                        </h2>
+                        <p class="cina2">40 ₴</p>
+                </div>
+                <div class="zakuska_container1">
+                    <img src="./img/кокт5.png" class="zakuska1">
+                    <h2 class="menytext">Какао з маршмеллоу
+                        <p class="menyinfo">Ніжне какао на молоці для теплої атмосфери.</p>
+                    </h2>
+                    <p class="cina2">45 ₴</p>
+                    <img src="./img/кокт6.png  " class="zakuska2">
+                    <h2 class="menytext2">Мохіто
+                        <p class="menyinfo">Безалкогольний мохіто із свіжою м'ятою та лаймом.
+                        </p>
+                    </h2>
+                    <p class="cina2">50 ₴</p>
+                </div>
+            </div>
         </div>
-        <div id="meny" class="section">
-            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-            <div class="elfsight-app-8c195452-b3dc-4c56-8caf-17b67bf7f138" data-elfsight-app-lazy></div>
+        <div id="cats" class="section">
+            <div class="kotu">
+            <h1 class="cats_title">Наші котики</h1>
+            <p class="cats_text">Усі наші коти були врятовані з вулиці або від них відмовилася колишня сім'я. Вони здорові, стерилізовані, виховані та готові подарувати вам безмежну любов. Віддаємо безкоштовно в добрі руки. Приходьте знайомитися з ними в наше котокафе, щоб вибрати кішку свого життя.</p>
+                <div class="cats_countainer">
+                    <img src="./img/Лорд.png" class="ctp">
+                    <img src="./img/Нана.png" class="ctp">
+                    <img src="./img/Лола.png" class="ctp">
+                    <img src="./img/Маркіз.png" class="ctp">
+                </div>
+                <div class="textcont">
+                <h2 class="kota">Лорд<p class="panos">Розумний та витончений, завжди у центрі уваги</p></h2>
+                <h2 class="kota">Нана<p class="panos">Ніжна та грайлива, коханням завоює ваше серце</p></h2>
+                <h2 class="kota">Лола<p class="panos">Таємнича красуня з сріблястим оком</p></h2>
+                <h2 class="kota">Маркіз<p class="panos">Борець, завжди в готовності до гри</p></h2>
+                </div>   
+                <div class="cats_countainer2">
+                    <img src="./img/Ляля та Арчі.png" class="ctp">
+                    <img src="./img/Абрикос.png" class="ctp">
+                    <img src="./img/Бублик.png" class="ctp">
+                    <img src="./img/Вуді.png" class="ctp">
+                </div>
+                <div class="textcont">
+                    <h2 class="kota">Шерлок і Ватсон<p class="panos">Детективний тандем, який готовий розкрити всі котячі таємниці</p></h2>
+                    <h2 class="kota">Абрикос<p class="panos">Професійний ледар, завжди відпочиває на повну</p></h2>
+                    <h2 class="kota">Бублик<p class="panos">На перший погляд злюка, але це не так</p></h2>
+                    <h2 class="kota">Вуді<p class="panos">Енергія та грайливість в одному флаконі</p></h2>
+                </div>   
+                <div class="prut">
+                    <p class="textprut">Ми притулок відкритого типу, дружні для тварин і для людей. 
+                        Ми рятуємо котів, тому що ви приходите до нас і приємно проводите час. 
+                        Наші коти – не лише частинка нашого кафе, вони – серце і душа цього місця. 
+                        Обираючи нашого котика, ви рятуєте одразу двох: того кого ви забрали, та того хто займе його місце в кафе.</p>
+                        <p class="textprut2">Усі наші котики різні, у кожного свій характер і кожен чекає на свою унікальну людину. 
+                        І коли в котокафе відбувається чергове маленьке диво, коли кіт або кішка знаходить сім'ю - ми не приховуємо радості. 
+                        Якщо ви побували у нас, вам сподобався хтось із наших котиків, і ви захотіли його всиновити вам потрібно заповнити заявку.</p>
+                </div>
+            <div class="bitton">
+                <a href="javascript:void(0)" id="buttonLink" class="titlebutton2">
+                    <button type="button" class="button34" onclick="openInNewTab()">Хочу забрати котика</button>
+                  </a>
 
-
-
-
-
-
-
-       
-       
+            </div>
+            </div>
         </div>
+        <div id="gallery" class="section">
+            <div class="gallery1">
+                <h1 class="titlegallery">Галерея</h1>
+            </div>
+            <div class="flex-container">
+                <div class="s1">
+                    <img src="./img/галерея1.png" class="img0" alt="Image11" onclick="openModal('./img/галерея1.png')">
+                    <img src="./img/галерея4.png" class="img03" alt="Image44" onclick="openModal('./img/галерея4.png')">
+                    <img src="./img/галерея6.png" class="img05" alt="Image66" onclick="openModal('./img/галерея6.png')">
+                </div>
+
+                <div class="s2">
+                    <img src="./img/галерея2.png" class="img01" alt="Image22" onclick="openModal('./img/галерея2.png')">
+                    <img src="./img/галерея3.png" class="img02" alt="Image33" onclick="openModal('./img/галерея3.png')">
+                    <img src="./img/галерея5.png" class="img04" alt="Image44" onclick="openModal('./img/галерея5.png')">
+                    <img src="./img/галерея7.png" class="img06" alt="Image66" onclick="openModal('./img/галерея7.png')">
+            </div>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img src="" alt="Modal Image" class="modal-content" id="modalImage">
+            </div>
+            
+            <script src="script.js"></script>
         </div>
+        <div id="volonter" class="section">
+            <div class="volon">
+                <h1 class="volon_title">Волонтерство</h1>
+                    <p class="volon_text">У нас є особлива можливість для тих, 
+                        хто бажає не лише приносити радість та допомагати нашим пухнастикам в кафе, 
+                        але й підтримувати котиків із притулку, які шукають свої домівки.
+                    </p>
+                    <div class="tect3">
+                            <div class="tect1">
+                                <div class="text-content">
+                                    <h2 class="tect-title">Завдання волонтерів</h2>
+                                    <p class="tect-text">Наші волонтери відповідають за різноманітні завдання, включаючи:
+                                        обійми котиків, підтримку чистоти в приміщенні, а також допомогу у проведенні подій та акцій.
+                                        Ваша допомога робить наше кафе та притулок ще теплішими та затишнішими!
+                                    </p>
+                                </div>
+                                <div class="text-content">
+                                    <h2 class="tect-title">Як приєднатися?</h2>
+                                    <p class="tect-text">Якщо ви бажаєте стати волонтером у Муркаві та взяти участь у благодійному заході, 
+                                        зв'яжіться з нашим координатором волонтерів.
+                                        Ваші зусилля не лише підтримають кафе, а й допоможуть котикам із притулку знайти свої нові будинки.
+                                    </p>
+                                </div>
+                                <div class="text-content2">
+                                    <h2 class="tect-title">Вигоди волонтерства</h2>
+                                    <p class="tect-text">Бути волонтером у Муркаві — це неймовірна можливість не лише обслуговувати гостей кафе,
+                                        а й зробити вагомий внесок у долю котів із притулку.
+                                        Кожен гість кафе допомагає забезпечити заслужений відпочинок та лікування для тих, хто шукає свою люблячу родину.
+                                    </p>
+                                </div>
+                            </div>
+                        <div class="imagen">
+                            <img src="./img/кот.png" class="img10" alt="image10">
+                        </div>
+                    </div> 
+                    <div class="text11">
+                        <p class="volon_text">
+                            Приєднуйтесь до нашої волонтерської команди сьогодні та станьте частиною теплого чарівного світу,
+                             де кожен ваш крок змінює життя не лише наших котиків,
+                             але і тих, хто чекає на свій дім у притулку.</p>
+                    </div>
+            </div>
+        </div>
+        <div id="rules" class="section">
+            <div class="rul">
+                <h1 class="rules_title">Наші правила</h1>
+                    <p class="rules_text">
+                        У Котокафе “Муркава” ми створили простір,
+                         де котики та люди можуть співіснувати з комфортом.
+                         Щоб забезпечити приємну атмосферу для всіх, ми встановили певні правила:
+                        </p>
+                <div class="text_ingo">
+                    <div class="textinfo">
+                        <h2 class="rultitle1">1. Головні правила</h2>
+                        <p class="rultext"><br>Не робіть нічого проти волі котиків. Не можна будити їх, утримувати силою на руках, тягнути за лапи/вуха/хвости, годувати без дозволу адміністратора.<br> 
+                            <br>Годувати котиків можна тільки придбаною в кафе їжею, після консультації з адміністратором.<br>
+                            Деякі тварини харчуються тільки лікувальним кормом, а також є котики з чутливим травленням і алергією на певні корми.<br>
+                            <br>Адміністрація котокафе залишає за собою право зробити зауваження, якщо відвідувач порушує правила закладу.
+                            Особливо якщо поводиться некоректно по відношенню до тварин.
+                            При повторному зауваженні, персонал має право попросити відвідувача покинути котокафе без повернення сплачених коштів.</p>
+                    </div>
+                    <div class="textinfo">
+                        <h2 class="rultitle1">2. Для батьків з дітьми</h2>
+                        <p class="rultext"><br>Діти віком до 5 років мають перебувати в котокафе під контролем батьків, діти до 14 років - у супроводі батьків.
+                            Адміністрація залишає за собою право зробити зауваження, якщо дитина не дотримується правил, а батьки не контролюють її поведінку.<br> 
+                            <br>Адміністрація не несе відповідальності за травми, отримані у зв'язку з недотриманням правил поведінки в котокафе.</p>
+                    </div>
+                    <div class="textinfo">
+                        <h2 class="rultitle1">3. Змінне взуття та гігієна</h2>
+                        <p class="rultext"><br>З метою збереження чистоти та зручності для котиків, просимо використовувати змінне взуття.
+                        Ви можете взяти наші багаторазові бахіли або капці. Можна принести своє змінне взуття.<br>
+                        <br>Обов'язково обробляйте руки антисептиком при вході та виході.</p>
+                    </div>
+                    <div class="textinfo">
+                        <h2 class="rultitle1">4. Загальні правила</h2>
+                        <p class="rultext"><br>Заборонено палити та розпивати алкоголь в котокафе.<br>
+                            <br>У котокафе дозволяється робити фотографії, відео, брати в котиків інтерв'ю, все викладати в соцмережі з хештегом #murkava, забороняється використання спалаху, щоб не доставляти дискомфорт іншим відвідувачам і котикам.<br>
+                            <br>Своїх тварин не дозволяється приводити в кафе. Рекомендується утриматися від відвідування, якщо ви або ваша дитина маєте алергію на котів.
+                            </p>
+                    </div>
+                    <div class="textinfo">
+                        <h2 class="rultitle1">5. Згода з правилами</h2>
+                        <p class="rultext">
+                            <br>Пам'ятайте, що недотримання правил може призвести до агресії з боку тварин. Дотримуйтеся правил безпеки та поводьтеся відповідально.<br>
+                            <br>Відвідуючи котокафе, ви погоджуєтеся з усіма вищезазначеними правилами та готові їх дотримуватися.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="section">
+            <div class="con">
+                <h1 class="con_title">Котокафе “Муркава”</h1>
+                <div class="context">
+                    <p class="txt">
+                        <span class="yellow-text">Адреса:</span>
+                        <br>м. Дніпро, вул. Лісова 23А<br>
+                    </p>
+                    <p class="txt">
+                        <span class="yellow-text">Контактний телефон:</span>
+                        <br>+38 099 123 4567<br>
+                    </p>
+                    <p class="txt">
+                        <span class="yellow-text">Email:</span>
+                        <br>murkavadnipro@gmail.com<br>
+                    </p>
+                </div>
+                <div class="context2">
+                    <p class="txt">
+                        <span class="yellow-text">Години роботи:</span>
+                        <br>ПН-НД 10:00-20:00<br>
+                    </p>
+                    <p class="txt">
+                        <span class="yellow-text">Для волонтерів:</span>
+                        <br>+38 099 876 5432<br>
+                    </p>
+                    <p class="txt">
+                        <span class="yellow-text">Telegram:</span>
+                        <br>@murkava_bot<br>
+                    </p>
+                </div>
+                <p class="umsf">УМСФ</p>
+                <img src="./img/svg/smiley_face_icon_143694 1.svg" class="img15" alt="image15">
+                <p class="con_end">Сайт створили в якості проєкту учні группи К22-3
+                    <br>Лях Анастасія, Литвиненко Вадим та Міхненко Дмитро</p>
+            </div>
+        </div>
+            </div>
+        </div> 
+        <script>
+            function openInNewTab() {
+              var win = window.open("https://forms.gle/iXbJTMxZwxPtkxyc6", '_blank');
+              win.focus();
+            }
+          </script>  
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var activeMenuId = 'zakuski_menu'; 
+                    var activeButton = document.querySelector('.button_meny[data-menu-id="' + activeMenuId + '"]');
+                    if (activeButton) {
+                        activeButton.classList.add('active');
+                    }
+                    showMenu(activeMenuId);
+                });
+
+                function showMenu(menuId) {
+                    var menus = document.querySelectorAll('.meny_content');
+                    menus.forEach(function (menu) {
+                        menu.style.display = 'none';
+                    });
+                    var selectedMenu = document.getElementById(menuId);
+                    if (selectedMenu) {
+                        selectedMenu.style.display = 'block';
+                    }
+                    var buttons = document.querySelectorAll('.button_meny');
+                    buttons.forEach(function (button) {
+                        button.classList.remove('active');
+                    });
+
+                    var activeButton = document.querySelector('.button_meny[data-menu-id="' + menuId + '"]');
+                    if (activeButton) {
+                        activeButton.classList.add('active');
+                    }
+                }
+            </script>
     </main>
     <script>
         const sections = document.querySelectorAll(".section");
         const tabs = document.querySelectorAll(".header_list .header_link");
-
+    
         window.addEventListener("scroll", function() {
             const scrollPosition = window.scrollY;
-
+    
             sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionBottom = sectionTop + section.clientHeight;
-
+                const sectionTop = section.offsetTop - 400; 
+                const sectionBottom = sectionTop + section.clientHeight + 0; 
+    
                 if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                     tabs.forEach(tab => {
                         tab.classList.remove("active");
